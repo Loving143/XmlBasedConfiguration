@@ -1,0 +1,19 @@
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="engine" class="beans.Engine">
+        <constructor-arg value="V8"/>
+    </bean>
+
+    <bean id="car" class="beans.Car">
+        <constructor-arg ref="engine"/>
+    </bean>
+    
+    <bean id="student" class="beans.Student">
+    <property name="name" value="Prateek Kumar"></property>
+    <property name="address" value="School Block Shakarpur"></property>
+    </bean>
+</beans>
