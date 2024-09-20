@@ -15,5 +15,6 @@
     <bean id="student" class="beans.Student">
     <property name="name" value="Prateek Kumar"></property>
     <property name="address" value="School Block Shakarpur"></property>
+    <property name="age" value="27"></property>
     </bean>
 </beans>

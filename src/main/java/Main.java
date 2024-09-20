@@ -20,5 +20,6 @@ public class Main {
         
         Student stu = (Student) context.getBean("student");
         stu.getDetails();
+        System.out.println("Studnet age is "+stu.getAge());
     }
 }
